@@ -1,49 +1,12 @@
-# MCM PRACTICUM
+# Air Passenger Traffic Forecasting using Community Detection and LSTM
 
-This is a template for MCM practicums.  Please read these instructions carefully.
+The Aviation industry has seen a significant growth in the recent years and has contributed to the upturn in the global economy. Air passengers forecasting has become inevitable for the operating airlines to plan their flights to cope up with the growing demands and the passengers can also plan their journey beforehand. The main objective of this paper is to predict the trends in the number of passengers travelling all over the world. As the travel trends differ from season to season and certain airports are busier than others, the predictions would be more specific, if it is based on seasons and hubs. In order to identify strongly connected routes and city pairs in the air transportation network, the Louvain algorithm for community detection is used. The busiest hubs are identified using this algorithm and then, season-wise forecasting is implemented for air passengers traffic. Long Short Term Memory(LSTM) model along with k-fold cross validation is used for the prediction purpose. The performance of the LSTM model is then evaluated using standard error metrics such as Mean Absolute Error(MAE),R2 score and adjusted R2 score.
 
-This file is written in
-[markdown](https://guides.github.com/features/mastering-markdown/).  Markdown
-is a suitable format for documents stored in git repositories.
-
-## Instructions
-
-You *must* do the following:
-
-1 - Fork this repo.
-
-2 - There is no need to rename your fork but if you wish to do so please use
-     the format:
-
-     2021-mcm-username
-
-replacing `username` with your School of Computing login name.
-
-For example, if Stephen Blott were to be doing an MCM practicum, he would rename
-his repo as:
-
-     2021-mcm-sblott
+The datasets used in this project are retrieved from the following links, which are also available in the main report:
+* Domestic US passengers data - https://www.transtats.bts.gov/Fields.asp?gnoyr_VQ=GED 
+* International US passengers data - https://data.transportation.gov/Aviation/International_Report_Passengers/xgub-n9bw
 
 
-You should also update the *Project description*.
+The main report for this project is added in docs/documentation folder.
 
-3 - This directory has two important sub-directories.
-
-- All of your source code should be placed in the `src` sub-directory.
-
-- All of your documentation should be placed in the `docs` sub-directory.
-
-4 - There is further important documentation in the `docs` directory.  Read that next.
-
-When you are have followed all of these instructions and are sure that you
-understand what is expected, you may replace the contents of this file with a
-brief description of your project (two or three paragraphs).
-
-## Additional Resources
-
-- Git [cheat sheet](https://gitlab.computing.dcu.ie/sblott/local-gitlab-documentation/blob/master/cheat-sheet.md)
-- Gitlab [CI environment](https://gitlab.computing.dcu.ie/sblott/docker-ci-environment) and it's [available software](https://gitlab.computing.dcu.ie/sblott/docker-ci-environment/blob/master/Dockerfile)
-- Example projects with CI configured:
-   * [Python](https://gitlab.computing.dcu.ie/sblott/test-project-python)
-   * [Java](https://gitlab.computing.dcu.ie/sblott/test-project-java)
-   * [MySql](https://gitlab.computing.dcu.ie/sblott/test-project-mysql)
+The source code used for this implementation is placed in src/code folder.
